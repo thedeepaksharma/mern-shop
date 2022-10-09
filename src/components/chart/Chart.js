@@ -1,4 +1,4 @@
-import React from "react";
+import "./chart.css";
 import {
   LineChart,
   Line,
@@ -7,9 +7,8 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import "./chart.css";
 
-const Chart = ({ title, data, dataKey, grid }) => {
+export default function Chart({ title, data, dataKey, grid }) {
   return (
     <div className="chart">
       <h3 className="chartTitle">{title}</h3>
@@ -23,6 +22,4 @@ const Chart = ({ title, data, dataKey, grid }) => {
       </ResponsiveContainer>
     </div>
   );
-};
-
-export default Chart;
+}
